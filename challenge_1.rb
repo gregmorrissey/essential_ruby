@@ -15,6 +15,7 @@
 
 def pmt(interest_rate, number_of_payments, present_value)
 
+	payment = (present_value * (interest_rate*((1+interest_rate)**number_of_payments)))/(((1+interest_rate)**number_of_payments)-1)
 end
 
 puts "Your monthly payment will be #{pmt(0.01, 60, 30000)}."
